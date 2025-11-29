@@ -1,5 +1,5 @@
 {% set name = "mailbits" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mailbits-{{ version }}.tar.gz
-  sha256: 72cd08926b3d0276607a4441ed5a059c4526409d8db2d57e0a6b23996a000bf8
+  sha256: 13140be94825d440986dee0a6e653d81d3b4df4b0059fbdb6d78ba8ccb0c4ec0
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
